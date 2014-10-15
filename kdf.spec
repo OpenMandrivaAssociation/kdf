@@ -1,6 +1,6 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	4.14.1
+Version:	4.14.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -41,6 +41,9 @@ drives and view them in a file manager.
 %makeinstall_std -C build
 
 %changelog
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
+- New version 4.14.2
+
 * Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
 - New version 4.14.1
 
