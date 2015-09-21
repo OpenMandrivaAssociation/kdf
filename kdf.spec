@@ -1,6 +1,6 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	15.08.0
+Version:	15.08.1
 Release:	2
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -34,7 +34,7 @@ drives and view them in a file manager.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6
 %make
 
 %install
