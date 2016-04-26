@@ -1,4 +1,2 @@
-removed_sources:
-  kdf-15.08.0.tar.xz: da94ba6d4bc875eaafbbb964534a245459efadc3
 sources:
-  kdf-15.12.3.tar.xz: 5bb24d82dc7871d428cab2f8f0ddab57d5120d96
+  kdf-16.04.0.tar.xz: a484f1a9f6c6de635e9ab177bf53080c65640148
