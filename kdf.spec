@@ -6,7 +6,7 @@ Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs-devel
+BuildRequires:	cmake(ECM)
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
@@ -32,11 +32,11 @@ drives and view them in a file manager.
 
 %prep
 %setup -q
+%cmake_kde5
 
 %build
-%cmake_kde4 -DCMAKE_MINIMUM_REQUIRED_VERSION=2.6
-%make
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
 
