@@ -7,6 +7,7 @@ License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
+BuildRequires:	pkgconfig(Qt5Core)
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
