@@ -7,7 +7,7 @@ License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5ConfigWidgets
+BuildRequires:	cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5I18n)
