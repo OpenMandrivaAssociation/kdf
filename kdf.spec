@@ -29,6 +29,7 @@ drives and view them in a file manager.
 
 %files
 %doc %{_docdir}/HTML/en/kdf
+%doc %{_docdir}/HTML/en/kcontrol/blockdevices
 %{_bindir}/kdf
 %{_bindir}/kwikdisk
 %{_libdir}/qt5/plugins/libkcm_kdf.so
