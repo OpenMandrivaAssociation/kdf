@@ -28,19 +28,16 @@ free space, type and mount point. It also allows you to mount and unmount
 drives and view them in a file manager.
 
 %files
-%{_kde_appsdir}/kdf
-%{_kde_bindir}/kdf
-%{_kde_bindir}/kwikdisk
-%{_kde_libdir}/kde4/kcm_kdf.so
-%{_kde_iconsdir}/*/*/apps/kcmdf.*
-%{_kde_iconsdir}/*/*/apps/kdf.*
-%{_kde_iconsdir}/*/*/apps/kwikdisk.*
-%{_kde_applicationsdir}/kdf.desktop
-%{_kde_applicationsdir}/kwikdisk.desktop
-%{_kde_services}/kcmdf.desktop
-%{_kde_docdir}/HTML/*/kdf
-%{_kde_docdir}/HTML/*/kcontrol/blockdevices
+%doc %{_docdir}/HTML/en/kdf
+%{_bindir}/kdf
+%{_bindir}/kwikdisk
+%{_libdir}/qt5/plugins/libkcm_kdf.so
+%{_datadir}/applications/*.desktop
+%{_datadir}/kservices5/kcmdf.desktop
+%{_datadir}/kxmlgui5/kdf/kdfui.rc
+%{_iconsdir}/*/*/*/*.png
 
+%libpackage kdfprivate 16
 #----------------------------------------------------------------------
 
 %prep
