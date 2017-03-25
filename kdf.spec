@@ -1,11 +1,12 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	16.12.2
+Version:	17.03.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5CoreAddons)
@@ -38,7 +39,7 @@ drives and view them in a file manager.
 %{_datadir}/kxmlgui5/kdf/kdfui.rc
 %{_iconsdir}/*/*/*/*.png
 
-%libpackage kdfprivate 16
+%libpackage kdfprivate 17
 #----------------------------------------------------------------------
 
 %prep
