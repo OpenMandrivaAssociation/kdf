@@ -1,6 +1,6 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -28,9 +28,7 @@ floppy and CD/DVD drives, etc.) along with information on their capacity,
 free space, type and mount point. It also allows you to mount and unmount
 drives and view them in a file manager.
 
-%files
-%doc %{_docdir}/HTML/en/kdf
-%doc %{_docdir}/HTML/en/kcontrol/blockdevices
+%files -f kdf.lang,kcontrol.lang
 %{_bindir}/kdf
 %{_bindir}/kwikdisk
 %{_libdir}/qt5/plugins/libkcm_kdf.so
@@ -51,4 +49,5 @@ drives and view them in a file manager.
 
 %install
 %ninja_install -C build
-
+%find_lang kdf --with-html
+%find_lang kcontrol --with-html
