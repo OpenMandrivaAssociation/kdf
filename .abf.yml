@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kdf-17.12.1.tar.xz: 2d3cc497a88077291ee3fe38afb28038ea3928dc
+sources:
+  kdf-17.12.2.tar.xz: 81512cdb9d20ce7174b7b30409b6a8e79f5aae50
