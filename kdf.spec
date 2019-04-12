@@ -1,7 +1,7 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	 18.12.3
-Release:	2
+Version:	 19.04.0
+Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
@@ -39,7 +39,7 @@ drives and view them in a file manager.
 %{_datadir}/kxmlgui5/kdf/kdfui.rc
 %{_iconsdir}/*/*/*/*.png
 
-%libpackage kdfprivate 18
+%libpackage kdfprivate %(echo %{version} |cut -d. -f1)
 #----------------------------------------------------------------------
 
 %prep
