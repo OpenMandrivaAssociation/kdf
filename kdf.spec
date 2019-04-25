@@ -1,7 +1,7 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	 19.04.0
-Release:	1
+Version:	19.04.0
+Release:	2
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
@@ -21,6 +21,7 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Widgets)
+Obsoletes:	%{mklibname kdfprivate 18} < %{EVRD}
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
@@ -43,7 +44,7 @@ drives and view them in a file manager.
 #----------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
