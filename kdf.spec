@@ -1,7 +1,7 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	19.04.0
-Release:	2
+Version:	19.04.1
+Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
