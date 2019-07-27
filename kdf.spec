@@ -1,6 +1,6 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -30,7 +30,7 @@ free space, type and mount point. It also allows you to mount and unmount
 drives and view them in a file manager.
 
 %files -f kdf.lang -f kcontrol.lang
-%{_sysconfdir}/xdg/*.categories
+%{_datadir}/qlogging-categories5/*.categories
 %{_bindir}/kdf
 %{_bindir}/kwikdisk
 %{_libdir}/qt5/plugins/libkcm_kdf.so
