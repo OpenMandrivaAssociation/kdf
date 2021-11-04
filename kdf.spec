@@ -1,6 +1,6 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	21.08.2
+Version:	21.08.3
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
