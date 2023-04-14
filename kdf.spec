@@ -1,7 +1,7 @@
 Name:		kdf
 Summary:	View free disk space
-Version:	22.12.3
-Release:	2
+Version:	23.03.90
+Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
@@ -36,7 +36,6 @@ drives and view them in a file manager.
 %{_libdir}/qt5/plugins/libkcm_kdf.so
 %{_datadir}/applications/*.desktop
 %{_datadir}/metainfo/org.kde.kdf.appdata.xml
-%{_datadir}/kservices5/kcmdf.desktop
 %{_datadir}/kxmlgui5/kdf/kdfui.rc
 %{_iconsdir}/*/*/*/*.png
 
