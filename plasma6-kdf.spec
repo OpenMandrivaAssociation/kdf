@@ -22,6 +22,7 @@ BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
+BuildRequires:	pkgconfig(Qt6Core5Compat)
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
