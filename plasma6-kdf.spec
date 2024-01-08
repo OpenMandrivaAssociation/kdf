@@ -35,7 +35,6 @@ drives and view them in a file manager.
 %{_bindir}/kwikdisk
 %{_datadir}/applications/*.desktop
 %{_datadir}/metainfo/org.kde.kdf.appdata.xml
-%{_datadir}/kxmlgui6/kdf/kdfui.rc
 %{_iconsdir}/*/*/*/*.png
 %{_libdir}/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kdf.so
 
@@ -43,7 +42,7 @@ drives and view them in a file manager.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n kdf-%{version}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
