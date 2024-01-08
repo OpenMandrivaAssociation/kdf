@@ -18,10 +18,10 @@ BuildRequires:	cmake(KF6KCMUtils)
 BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(KF6XmlGui)
+BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
-Obsoletes:	%{mklibname kdfprivate 18} < %{EVRD}
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
