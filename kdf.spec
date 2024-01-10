@@ -1,7 +1,7 @@
 Name:		kdf
 Summary:	View free disk space
 Version:	23.08.4
-Release:	2
+Release:	3
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://utils.kde.org/projects/kdf
