@@ -1,6 +1,6 @@
 Name:		plasma6-kdf
 Summary:	View free disk space
-Version:	24.01.90
+Version:	24.01.95
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
