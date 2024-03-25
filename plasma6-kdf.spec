@@ -30,6 +30,7 @@ BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(Qt6Core5Compat)
+Obsoletes: %{mklibname kdfprivate} < %{EVRD}
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
@@ -45,8 +46,7 @@ drives and view them in a file manager.
 %{_datadir}/metainfo/org.kde.kdf.appdata.xml
 %{_iconsdir}/*/*/*/*.png
 %{_libdir}/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kdf.so
-
-%libpackage kdfprivate %(echo %{version} |cut -d. -f1)
+%{_libdir}/libkdfprivate.so*
 #----------------------------------------------------------------------
 
 %prep
