@@ -4,7 +4,7 @@
 Name:		plasma6-kdf
 Summary:	View free disk space
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}3
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		https://utils.kde.org/projects/kdf
