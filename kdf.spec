@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kdf
 Summary:	View free disk space
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -31,6 +31,8 @@ BuildRequires:	pkgconfig(Qt6Gui)
 BuildRequires:	pkgconfig(Qt6Widgets)
 BuildRequires:	pkgconfig(Qt6Core5Compat)
 Obsoletes: %{mklibname kdfprivate} < %{EVRD}
+
+%rename plasma6-kdf
 
 %description
 KDiskFree displays the available file devices (hard drive partitions,
