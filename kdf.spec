@@ -3,8 +3,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kdf
 Summary:	View free disk space
-Version:	25.08.3
-Release:	%{?git:0.%{git}.}2
+Version:	25.12.0
+Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		https://utils.kde.org/projects/kdf
